@@ -1,0 +1,55 @@
+/* * {
+    border: 4px black solid;
+    background-color: grey;
+}
+
+h1 {
+    color: brown;
+    font-size: 50px;
+    font-weight: 400;
+    background-color: cornflowerblue; */
+
+/* } */
+
+/* .blocks {
+    background-color: darkgreen;
+    color: white;
+    font-size: 40px;
+    width: 400px;
+    height: 400px;
+} */
+
+/* .title {
+    color: pink;
+}
+
+.extra {
+    background-color: teal;
+}
+
+#block4 {
+    width: 300px;
+    height: 500px;
+    color: blue;
+    background-color: yellow;
+    font-size: 20px;
+} */
+
+div {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 20px 30px;
+}
+
+#block-1 {
+    background-color: purple;
+    width: 200px;
+    height: 200px;
+    color: white;
+    font-size: 40px;
+    border: 5px yellow solid;
+}

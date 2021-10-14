@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    table {
+        border: 2px solid black;
+        text-align: left;
+
+    }
+
+    th,
+    td {
+        border: 1px solid lightgrey;
+        padding: 5px;
+    }
+</style>
+
+<body>
+    <!-- БЛОК (что это?) это не состояние -->
+    <!-- верно -->
+    <div class="warning"></div>
+    <!-- неверно -->
+    <div class="yellow-warning"></div>
+
+    <div class="nav-left">
+        <div class="logo"></div>
+    </div>
+
+    <!-- Элемент -->
+    <!-- БЛОК (что это?) это не состояние -->
+    <!-- Имя элемента отделяется от имени блока двумя __ -->
+
+    <form class="search-form">
+        <input class="search-form__input" type="text">
+        <button class="search-form__button">btn</button>
+    </form>
+
+    <!-- Элемент всегда часть блока, а не другого элемента -->
+
+    <form class="search-form">
+        <div class="search-form__content">
+            <!-- либо так -->
+            <input class="search-form__input" type="text">
+            <button class="search-form__button">btn</button>
+            <!-- либо так  -->
+            <input class="search-form__content-input" type="text">
+            <button class="search-form__content-button">btn</button>
+        </div>
+    </form>
+
+
+    <!-- Элемент необязательный компонент блока -->
+
+    <!-- неверно -->
+    <form class="search-form"></form>
+    <input class="search-form__input" type="text">
+
+    <!-- Блок search-form -->
+    <form class="search-form"></form>
+    <!-- Блок input  -->
+    <input class="input" type="text">
+    <!-- Блок button  -->
+    <button class="button">Search</button>
+
+    <!-- модификатор -->
+
+    <!-- БЛОК (какой?) это состояние -->
+    <!-- Имя модификаторв отделяется от имени блока или элемента двумя _ -->
+
+    <!-- Булевый  -->
+    <div class="make-order">
+        <button class="make-order__button make-order__button_disable">сделать заказ</button>
+        <!-- ключ-значение -->
+
+        <div class="make-order">
+            <button class="make-order__button make-order__button_color_red"></button>
+
+            <div class="description">
+                <p class="description__paragraph description__paragraph_color_green description__paragraph_fsz_24px">
+                </p>
+            </div>
+            <!-- невозможно использовать два одинаковых модификатора с разными значениями  -->
+            <div class="description">
+                <p class="description__paragraph description__paragraph_fw_700 description__paragraph_fw_400 "></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- input -->
+
+    <input type="text" placeholder="Enter name">
+    <input type="password">
+    <input type="tel" placeholder="enter phone number">
+    <input type="email">
+    <input type="number">
+    <input type="checkbox">
+    <input type="date">
+
+    <!-- table -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>name</th>
+                <th>price</th>
+                <th>count</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>ball</td>
+                <td>300</td>
+                <td>уцсуу</td>
+
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>ball</td>
+                <td>300</td>
+                <td>сцывсцу</td>
+
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>#</td>
+                <th>total</th>
+                <td>5000</td>
+                <td>5</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+
+</body>
+
+</html>

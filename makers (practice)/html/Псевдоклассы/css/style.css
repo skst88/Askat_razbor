@@ -1,0 +1,124 @@
+span:first-child {
+    color: red
+}
+
+span:last-child {
+    color: teal;
+}
+
+span:nth-child(2) {
+    color: blue;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* посещенные ссылки */
+
+a:visited {
+    color: pink;
+}
+
+/* не-ые сслыки */
+
+a:link {
+    color: purple;
+}
+
+/* при наведении */
+
+a:hover {
+    background-color: pink;
+    font-size: 32px;
+}
+
+a {
+    transition: all 5s;
+}
+
+/* активные ссылки */
+
+a:active {
+    color: black
+}
+
+span::first-letter {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+p::first-letter {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+p::first-line {
+    background: lightblue;
+    font-style: italic;
+}
+
+input::placeholder {
+    color: black;
+    font-size: 15px;
+}
+
+#span-1::before {
+    content: 'Apple ';
+}
+
+#span-1::after {
+    content: ' M1';
+    font-weight: 700;
+}
+
+#span-2::before {
+    content: 'NV ';
+}
+
+#span-2::after {
+    content: ' PP';
+    font-weight: 700;
+}
+
+.main-block {
+    width: 100%;
+    background: gray;
+}
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    background: darkgreen;
+    position: fixed;
+    /* position: sticky; */
+    top: 0;
+    /* z-index: -1; */
+    z-index: 2;
+}
+
+.first-div {
+    padding-top: 100%;
+}
+
+.content-clock {
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.footer {
+    width: 100%;
+    height: 150px;
+    background: darkorange;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    background: black;
+    position: absolute;
+    left: 10;
+    bottom: 10px;
+    z-index: 1;
+}
